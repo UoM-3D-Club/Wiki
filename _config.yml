@@ -1,8 +1,8 @@
 title: Research group wiki
 description: Wiki for sharing procedures and information in research groups.
 maintainer: Joe Bloggs
-baseurl: "/research-group-wiki"
-github_user_or_organisation: aplowman
+baseurl: "/Wiki"
+github_user_or_organisation: UoM-3D-Club
 markdown: kramdown
 kramdown:
   input: GFM
