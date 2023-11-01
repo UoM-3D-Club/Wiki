@@ -15,11 +15,11 @@ Content in this wiki is organised into *collections* (which you can see in the n
 
 In each collection home page, you can add a new page by clicking the "Add Page" (or "Add Experiment") button, which looks something like this:
 
-![add page button](/research-group-wiki/assets/images/site/add_page_button.png)
+![add page button](/Wiki/assets/images/site/add_page_button.png)
 
 After you click this button, you will be taken to GitHub, where you can add your new page. It looks something like this (in this case, I clicked on the "Add Page" button in the "Software & Simulation" collection):
 
-![GitHub new page](/research-group-wiki/assets/images/site/new_page_github.png)
+![GitHub new page](/Wiki/assets/images/site/new_page_github.png)
 
 The first thing to do is give the new page a file name. Try to keep the file name short and try to use underscores (`_`) instead of spaces. Also, please make sure the file name ends with `.md`, which stands for "Markdown". Markdown is a simple way to write and structure text documents. See [here](https://guides.github.com/features/mastering-markdown/) for an introduction to Markdown. Once you have given the page a file name ending in `.md`, you then need to add some basic information to the top of the file. Click anywhere in the `Edit new file` text area and add the following text:
 
@@ -42,37 +42,37 @@ Some content is here with *italic* text and **bold** text as well!
 
 After this, the GitHub page will look something like this:
 
-![GitHub new page with content](/research-group-wiki/assets/images/site/new_page_github_with_content.png)
+![GitHub new page with content](/Wiki/assets/images/site/new_page_github_with_content.png)
 
 You're now ready to publish the new page. Scroll down to the bottom of the page and click on the "Commit new file" button, which looks something like this:
 
-![GitHub new page commit button](/research-group-wiki/assets/images/site/new_page_github_commit_button.png)
+![GitHub new page commit button](/Wiki/assets/images/site/new_page_github_commit_button.png)
 
 After you "commit" the new page, you'll have to wait a couple of minutes before your new file appears as a link on the collection home page. Your new page should then look something like this:
 
-![New page on the wiki](/research-group-wiki/assets/images/site/new_page_final.png)
+![New page on the wiki](/Wiki/assets/images/site/new_page_final.png)
 
 ## How to add images to pages
 
 To add images to a page, you first need to upload the images to the correct folder on GitHub. Once that is done you can then add them to a page. To upload images to the correct folder, click on the "Add images" button in the top right corner of the Wiki. It looks something like this:
 
-![Add images icon](/research-group-wiki/assets/images/site/add_images_button.png)
+![Add images icon](/Wiki/assets/images/site/add_images_button.png)
 
 This will take you to a page on GitHub where you can upload images. In particular, once you "commit" the new images, they will be placed in the folder: `wiki/assets/images/posts`.
 
 Imagine we uploaded a photo of some aluminium, with the file name `aluminium_small.jpg`. You would then be able to add this image to your Markdown file by adding the following code to the page (by editing it on GitHub):
 
 ```markdown
-![](/research-group-wiki/assets/images/posts/aluminium_small.jpg)
+![](/Wiki/assets/images/posts/aluminium_small.jpg)
 ```
 
 In the GitHub editor, this would look something like this:
 
-![Edit Github page with an image](/research-group-wiki/assets/images/site/edit_github_page_image.png)
+![Edit Github page with an image](/Wiki/assets/images/site/edit_github_page_image.png)
 
 After you "commit" the changes, you'll again need to wait a couple of minutes before they show up. Once they do, the page with the image will look something like this:
 
-![New page on the wiki with image](/research-group-wiki/assets/images/site/new_page_final_image.png)
+![New page on the wiki with image](/Wiki/assets/images/site/new_page_final_image.png)
 
 ## How to add a static version of a Jupyter notebook
 
@@ -108,5 +108,5 @@ After you "commit" the changes, you'll again need to wait a couple of minutes be
 
   Note that we must use `layout: jupyter_notebook` in the YAML front matter, and the contents of the file is just an {% raw %}`{% include ... %}`{% endraw %} statement.
 
-Once the changes have been deployed on GitHub, you should now find a link to the notebook on the chosen collection home page. Note that a Binder link should also be included, which allows anyone to launch an interactive version of the notebook. If your notebook requires some additional Python packages to run properly, you can add them to the file `binder/requirements`.txt. (Note that this `requirements.txt` file is shared for all notebooks on the Wiki, so please try to avoid specifying package versions.)
+Once the changes have been deployed on GitHub, you should now find a link to the notebook on the chosen collection home page. Note that a Binder link should also be included, which allows anyone to launch an interactive version of the notebook. If your notebook requires some additional Python packages to run properly, you can add them to the file `binder/requirements`.txt. (Note that this `requirements.txt` file is shared for all notebooks on the , so please try to avoid specifying package versions.)
 
